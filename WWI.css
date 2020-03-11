@@ -1,6 +1,6 @@
 body{
  
- background-color: rgb(245, 245, 245);
+ background-color: #FAEBE6;
 }
 
 
@@ -17,10 +17,10 @@ h1{
     font-size: 40px;
     width: 400px;
     border-radius: 20px;
-    letter-spacing: px;
-    background: #FAF6F6;
-    box-shadow: 0px 0px 50px rgba(233, 134, 103, 0.8);
-  
+
+    background: linear-gradient(145deg, #e1d4cf, #fffbf6);
+    box-shadow:  16px 16px 32px #d2c5c1, 
+                 -16px -16px 32px #ffffff;
 }
 
 /* Rectangle 7 */
