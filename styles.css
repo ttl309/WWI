@@ -1,40 +1,66 @@
 body{
- 
- background-color: #FAEBE6;
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #24252A ;
+}
+
+li, a, button{
+    font-family: 'PT sans',sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color:#edf0f1;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:30px 10%;
+}
+
+nav {
+    order: 1;
+}
+
+.nav__links{
+    list-style-type: none;
+}
+
+.nav__links li{
+    display: inline-block;
+    padding: 0px 20px;
 }
 
 
-h1{
-    padding-top: 30px;
-    padding-bottom: 30px;
-    
-    margin:20% auto ;
-    text-align: center;
-    position: relative;
-    color: rgb(0, 0, 0);
-    font-family:'Product sans';
-    font-weight: 700;
-    font-size: 40px;
-    width: 400px;
-    border-radius: 20px;
 
-    background: linear-gradient(145deg, #e1d4cf, #fffbf6);
-    box-shadow:  16px 16px 32px #d2c5c1, 
-                 -16px -16px 32px #ffffff;
+.nav__links li a{
+    transition: all 0.3s ease 0s;
 }
 
-/* Rectangle 7 */
-.rectangle7{
 
-
-width: 190.65px;
-height: 900.8px;
-left: 1000.55px;
-top: -186px;
-background: #FF6B00;
-box-shadow: 0px 0px 100px #FF6B00;
-transform: rotate(31.31deg);
+.nav__links li a:hover {
+   color:#0088a9;
 }
+
+.cta{
+    order:2; 
+}
+
+button{
+    padding: 9px 25px;
+    background-color: rgba(0, 136,169,1);
+    border: none;
+    border-radius:50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    background-color:rgba(0,136,169,0.8);
+}
+
 
 
 
