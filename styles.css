@@ -2,7 +2,7 @@ body{
     box-sizing:border-box;
     margin: 0;
     padding: 0;
-    background-color: #24252A ;
+    background-color: wheat;
 }
 
 li, a, button{
@@ -18,9 +18,13 @@ header{
     justify-content: space-between;
     align-items: center;
     padding:30px 10%;
+    border: solid 2px; /*aide pour la taille que prend le hader*/
+    height: 10px;
+    background-color: tomato;
 }
 
 nav {
+    border:solid 2px;/*aide pour la taille que prend la*/
     order: 1;
 }
 
