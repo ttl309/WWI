@@ -10,34 +10,25 @@
 </head>
 
 <body>
-    <form action="">
-        <div class="container">
-          <h1>Register</h1>
-          <p>Remplir les champs ci-dessous pour vous inscrire.</p>
-          <hr>
-      
-          <label for="email"><b>Email</b></label>
-          <input type="text" placeholder="Enter Email" name="email" required>
-      
-          <label for="psw"><b>Password</b></label>
-          <input type="password" placeholder="Enter Password" name="psw" required>
-      
-          <label for="psw-repeat"><b>Repeat Password</b></label>
-          <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-          <hr>
-      
-          <p>En creant votre compte vous accpeter les <a href="#">CGU</a>.</p>
-          <button type="submit" class="registerbtn">s'inscrire</button>
-        </div>
-      
-        <div class="container signin">
-          <p>Already have an account? <a href="#">Sign in</a>.</p>
-        </div>
-      </form>
+    <form id="myform" class="cssform" action="">
 
-
-
-
+        <p><label for="user">Nom :</label>
+        <input type="text" id="user" value="" /></p>
+    
+        <p><label for="emailaddress">Email :</label>
+        <input type="text" id="emailaddress" value="" /></p>
+    
+        <p><label for="comments">Message :</label>
+        <textarea id="comments" rows="5" cols="25"></textarea></p>
+            
+        <p><label for="terms">Conditions g&eacute;n&eacute;rales accept&eacute;es</label>
+        <input type="checkbox" id="terms" class="boxes" /></p>
+    
+        <p><div style="margin-left: 150px;">
+            <input type="submit" value="Envoyer" />
+            <input type="reset" value="Reset" />
+        </div></p>
+    </form>
 </body>
 
 </html>
