@@ -1,3 +1,21 @@
 body{
-    display: flex;
+   display: flexbox;
+   background-color: khaki;
 }
+
+.cssform{
+    text-align: center;
+    border: solid red;
+    background-color: yellow;
+
+}
+
+.submitReset{
+    text-align: center;
+}
+textarea{
+    border-radius: 10px;
+}
+
+
+
