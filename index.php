@@ -1,43 +1,31 @@
-<!DOCTYPE html>
-<html lang="fr">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
-    <title>WWI</title>
-</head>
-
+<html>
+<?php include('views/head.php'); ?>
 <body>
-    <div class="contact-us">
-        <div class="title">
-          <h1>Contactez-Nous !</h1>
-        </div>
-        <div class="form">
-          <div class="form-items">
-            <input type="text" class="input" placeholder="Username">
-            <i class="fas fa-user"></i>
-          </div>
-          <div class="form-items">
-            <input type="text" class="input" placeholder="Email">
-            <i class="fas fa-envelope"></i>
-          </div>
-          <div class="form-items">
-            <textarea class="input message" cols="30" rows="10" placeholder="Message....."></textarea>
-          </div>
-        </div>
-        
-        <div class="btn">
-          Envoyer
-          <i class="fas fa-arrow-right"></i>
-        </div>
-        
-        
-        
-        
-      </div>
-</body>
+<?php include('views/header.php'); ?>
 
+<div class="container">
+    <h2>Contact</h2>
+    <div class="row mt-4">
+        <form action="controllers/contact_form.php" method="POST" class="col-lg">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="foo@bar.net">
+            </div>
+            <div class="form-group">
+                <label for="first_name">Full name or company</label>
+                <input type="text" class="form-control" name="full_name_or_company" placeholder="John Doe">
+            </div>
+
+            <div class="form-group">
+                <label for="comment">Comment</label>
+                <textarea class="form-control" name="comment" rows="10"></textarea>
+            </div>
+            <hr>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>
+</body>
 </html>
