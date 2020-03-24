@@ -1,10 +1,15 @@
-
 <html>
 <?php include('views/head.php'); ?>
 <body>
 <?php include('views/header.php'); ?>
 
 <div class="container">
+    <?php if (isset($_GET['success'])): ?>
+        <div class="alert alert-success" role="alert">
+            Message sent successfully!
+        </div>
+    <?php endif; ?>
+
     <h2>Contact</h2>
     <div class="row mt-4">
         <form action="controllers/contact_form.php" method="POST" class="col-lg">
