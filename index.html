@@ -10,30 +10,33 @@
 </head>
 
 <body>
-    <form id="myform" class="cssform" action="">
-
-        <legend>Contactez-nous !</legend>
-
-        <p><label for="user">Nom :</label>
-            <input type="text" id="user" value="" /></p>
-
-        <p><label for="emailaddress">Email :</label>
-            <input type="text" id="emailaddress" value="" /></p>
-
-        <p><label for="comments">Message :</label>
-            <textarea id="comments" rows="5" cols="25"></textarea></p>
-
-        <p><label for="terms">Conditions g&eacute;n&eacute;rales accept&eacute;es</label>
-            <input type="checkbox" id="terms" class="boxes" /></p>
-
-        <p>
-            <div style="margin-left: 100px;">
-                <input type="submit" value="Envoyer" />
-                <input type="reset" value="Reset" />
-            </div>
-        </p>
-
-    </form>
+    <div class="contact-us">
+        <div class="title">
+          <h1>Contactez-Nous !</h1>
+        </div>
+        <div class="form">
+          <div class="form-items">
+            <input type="text" class="input" placeholder="Username">
+            <i class="fas fa-user"></i>
+          </div>
+          <div class="form-items">
+            <input type="text" class="input" placeholder="Email">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="form-items">
+            <textarea class="input message" cols="30" rows="10" placeholder="Message....."></textarea>
+          </div>
+        </div>
+        
+        <div class="btn">
+          Submit
+          <i class="fas fa-arrow-right"></i>
+        </div>
+        
+        
+        
+        
+      </div>
 </body>
 
 </html>
